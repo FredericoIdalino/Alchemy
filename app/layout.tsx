@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Alchemy - Marketing que Transforma Resultados",
-  description: "Plataforma de marketing confiável. Contrate nossos serviços, trabalhe conosco como editor ou construa sua renda passiva.",
+  title: "Alchemy - Marketing that Transforms Results",
+  description: "Trusted marketing platform. Hire our services, work with us as an editor or build your passive income.",
 };
 
 export default function RootLayout({
@@ -23,7 +23,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="pt-BR">
+    <html lang="en">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >

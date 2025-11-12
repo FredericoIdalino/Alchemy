@@ -12,34 +12,34 @@ export default function Home() {
         <div className="mx-auto max-w-7xl">
           <div className="mx-auto max-w-4xl text-center">
             <h1 className="text-5xl font-bold tracking-tight text-[#0A0A12] sm:text-6xl lg:text-7xl">
-              Transforme seu{" "}
+              Transform your{" "}
               <span className="bg-gradient-to-r from-[#FFD642] to-[#25E5C5] bg-clip-text text-transparent">
                 marketing
               </span>
-              {" "}em resultados
+              {" "}into results
             </h1>
             <p className="mt-6 text-xl leading-8 text-[#0A0A12]/80">
-              A plataforma de marketing confiável por empresas que querem crescer. 
-              Contrate nossos serviços, trabalhe conosco ou construa sua renda passiva.
+              The trusted marketing platform for companies that want to grow. 
+              Hire our services, work with us or build your passive income.
             </p>
             <div className="mt-12 flex flex-wrap items-center justify-center gap-4">
               <Link 
-                href="/cliente"
+                href="/client"
                 className="rounded-lg bg-[#FFD642] px-8 py-4 text-base font-semibold text-[#0A0A12] shadow-sm transition-all hover:bg-[#FFD642]/90 hover:shadow-lg hover:scale-105"
               >
-                Contratar Serviços
+                Hire Services
               </Link>
               <Link 
                 href="/editor"
                 className="rounded-lg border-2 border-[#0A0A12] bg-white px-8 py-4 text-base font-semibold text-[#0A0A12] transition-all hover:bg-[#0A0A12] hover:text-[#F8F8F8]"
               >
-                Trabalhar Conosco
+                Work With Us
               </Link>
               <Link 
-                href="/rendaPassiva"
+                href="/passiveIncome"
                 className="rounded-lg bg-[#25E5C5] px-8 py-4 text-base font-semibold text-[#0A0A12] shadow-sm transition-all hover:bg-[#25E5C5]/90 hover:shadow-lg hover:scale-105"
               >
-                Renda Passiva
+                Passive Income
               </Link>
             </div>
           </div>
@@ -51,15 +51,15 @@ export default function Home() {
         <div className="mx-auto max-w-7xl">
           <div className="mx-auto max-w-2xl text-center mb-16">
             <h2 className="text-3xl font-bold tracking-tight text-[#0A0A12] sm:text-4xl">
-              Escolha seu caminho
+              Choose your path
             </h2>
             <p className="mt-4 text-lg text-[#0A0A12]/80">
-              Três formas de trabalhar com a Alchemy
+              Three ways to work with Alchemy
             </p>
           </div>
           <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
-            {/* Cliente Card */}
-            <Link href="/cliente" className="group">
+            {/* Client Card */}
+            <Link href="/client" className="group">
               <div className="relative overflow-hidden rounded-2xl border border-[#0A0A12]/10 bg-white p-8 shadow-sm transition-all hover:shadow-2xl hover:border-[#25E5C5]/50 hover:-translate-y-2">
                 <div className="absolute inset-0 bg-gradient-to-br from-[#25E5C5]/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
                 <div className="relative">
@@ -69,10 +69,10 @@ export default function Home() {
                     </svg>
                   </div>
                   <h3 className="text-2xl font-bold text-[#0A0A12] mb-4">
-                    Para Clientes
+                    For Clients
                   </h3>
                   <p className="text-[#0A0A12]/70 leading-relaxed">
-                    Contrate serviços de marketing de alta qualidade. Gestão de tráfego, criação de conteúdo e estratégia completa.
+                    Hire high-quality marketing services. Traffic management, content creation and complete strategy.
                   </p>
                 </div>
               </div>
@@ -89,17 +89,17 @@ export default function Home() {
                     </svg>
                   </div>
                   <h3 className="text-2xl font-bold text-[#F8F8F8] mb-4">
-                    Para Editores
+                    For Editors
                   </h3>
                   <p className="text-[#F8F8F8]/70 leading-relaxed">
-                    Junte-se à nossa equipe. Trabalhe com projetos incríveis, receba pagamentos rápidos e tenha suporte completo.
+                    Join our team. Work on amazing projects, receive fast payments and have complete support.
                   </p>
                 </div>
               </div>
             </Link>
 
-            {/* Renda Passiva Card */}
-            <Link href="/rendaPassiva" className="group">
+            {/* Passive Income Card */}
+            <Link href="/passiveIncome" className="group">
               <div className="relative overflow-hidden rounded-2xl border border-[#0A0A12]/10 bg-white p-8 shadow-sm transition-all hover:shadow-2xl hover:border-[#25E5C5]/50 hover:-translate-y-2">
                 <div className="absolute inset-0 bg-gradient-to-br from-[#FFD642]/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
                 <div className="relative">
@@ -109,10 +109,10 @@ export default function Home() {
                     </svg>
                   </div>
                   <h3 className="text-2xl font-bold text-[#0A0A12] mb-4">
-                    Renda Passiva
+                    Passive Income
                   </h3>
                   <p className="text-[#0A0A12]/70 leading-relaxed">
-                    Construa uma fonte de renda passiva. Ganhos recorrentes, liberdade financeira e crescimento contínuo.
+                    Build a passive income source. Recurring earnings, financial freedom and continuous growth.
                   </p>
                 </div>
               </div>

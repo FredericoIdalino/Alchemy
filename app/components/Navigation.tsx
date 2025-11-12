@@ -12,25 +12,24 @@ export default function Navigation() {
             </span>
           </Link>
           <div className="hidden items-center gap-8 md:flex">
-            <Link href="/cliente" className="text-sm font-medium text-[#0A0A12]/70 hover:text-[#0A0A12] transition-colors">
-              Cliente
+            <Link href="/client" className="text-sm font-medium text-[#0A0A12]/70 hover:text-[#0A0A12] transition-colors">
+              Client
             </Link>
             <Link href="/editor" className="text-sm font-medium text-[#0A0A12]/70 hover:text-[#0A0A12] transition-colors">
               Editor
             </Link>
-            <Link href="/rendaPassiva" className="text-sm font-medium text-[#0A0A12]/70 hover:text-[#0A0A12] transition-colors">
-              Renda Passiva
+            <Link href="/passiveIncome" className="text-sm font-medium text-[#0A0A12]/70 hover:text-[#0A0A12] transition-colors">
+              Passive Income
             </Link>
           </div>
           <Link 
-            href="/cliente"
+            href="/client"
             className="rounded-lg bg-[#FFD642] px-4 py-2 text-sm font-medium text-[#0A0A12] transition-all hover:bg-[#FFD642]/90 hover:shadow-lg"
           >
-            Começar
+            Get Started
           </Link>
         </div>
       </div>
     </nav>
   );
 }
-

@@ -1,7 +1,7 @@
 import Navigation from "../components/Navigation";
 import Footer from "../components/Footer";
 
-export default function RendaPassivaPage() {
+export default function PassiveIncomePage() {
   return (
     <div className="min-h-screen bg-[#F8F8F8]">
       <Navigation />
@@ -11,13 +11,13 @@ export default function RendaPassivaPage() {
         <div className="mx-auto max-w-7xl">
           <div className="mx-auto max-w-3xl text-center">
             <h1 className="text-5xl font-bold tracking-tight text-[#0A0A12] sm:text-6xl lg:text-7xl">
-              Construa sua{" "}
+              Build Your{" "}
               <span className="bg-gradient-to-r from-[#FFD642] to-[#25E5C5] bg-clip-text text-transparent">
-                Renda Passiva
+                Passive Income
               </span>
             </h1>
             <p className="mt-6 text-xl leading-8 text-[#0A0A12]/80">
-              Trabalhe conosco e construa uma fonte de renda passiva. Ganhe enquanto você dorme.
+              Work with us and build a passive income source. Earn while you sleep.
             </p>
           </div>
         </div>
@@ -37,10 +37,10 @@ export default function RendaPassivaPage() {
                   </svg>
                 </div>
                 <h3 className="text-2xl font-bold text-[#0A0A12] mb-4">
-                  Ganhos Recorrentes
+                  Recurring Earnings
                 </h3>
                 <p className="text-[#0A0A12]/70 leading-relaxed">
-                  Receba pagamentos mensais recorrentes trabalhando com nossos clientes. Renda estável e previsível.
+                  Receive monthly recurring payments working with our clients. Stable and predictable income.
                 </p>
               </div>
             </div>
@@ -55,10 +55,10 @@ export default function RendaPassivaPage() {
                   </svg>
                 </div>
                 <h3 className="text-2xl font-bold text-[#0A0A12] mb-4">
-                  Liberdade Financeira
+                  Financial Freedom
                 </h3>
                 <p className="text-[#0A0A12]/70 leading-relaxed">
-                  Trabalhe de onde quiser, quando quiser. Construa sua liberdade financeira com projetos que geram renda passiva.
+                  Work from wherever you want, whenever you want. Build your financial freedom with projects that generate passive income.
                 </p>
               </div>
             </div>
@@ -73,92 +73,92 @@ export default function RendaPassivaPage() {
                   </svg>
                 </div>
                 <h3 className="text-2xl font-bold text-[#0A0A12] mb-4">
-                  Crescimento Contínuo
+                  Continuous Growth
                 </h3>
                 <p className="text-[#0A0A12]/70 leading-relaxed">
-                  Aumente sua renda ao longo do tempo. Quanto mais você trabalha, mais oportunidades de crescimento você tem.
+                  Increase your income over time. The more you work, the more growth opportunities you have.
                 </p>
               </div>
             </div>
           </div>
 
-          {/* Formulário Prospecção */}
+          {/* Prospect Form */}
           <div className="mt-20 mx-auto max-w-2xl">
             <div className="rounded-2xl bg-gradient-to-br from-[#FFD642]/10 to-[#25E5C5]/10 p-8 border border-[#0A0A12]/10">
               <h3 className="text-2xl font-bold text-[#0A0A12] mb-6 text-center">
-                Interessado em Renda Passiva?
+                Interested in Passive Income?
               </h3>
               <p className="text-center text-[#0A0A12]/70 mb-8">
-                Preencha o formulário abaixo e nossa equipe entrará em contato para explicar como você pode começar a construir sua renda passiva conosco.
+                Fill out the form below and our team will contact you to explain how you can start building your passive income with us.
               </p>
               <form className="space-y-6">
                 <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
                   <div>
-                    <label htmlFor="prospeccao-nome" className="block text-sm font-medium text-[#0A0A12] mb-2">
-                      Nome
+                    <label htmlFor="prospect-name" className="block text-sm font-medium text-[#0A0A12] mb-2">
+                      Name
                     </label>
                     <input
                       type="text"
-                      id="prospeccao-nome"
-                      name="prospeccao-nome"
+                      id="prospect-name"
+                      name="prospect-name"
                       className="w-full rounded-lg border-2 border-[#0A0A12]/20 bg-white px-4 py-3 text-[#0A0A12] focus:border-[#25E5C5] focus:ring-2 focus:ring-[#25E5C5]/20 transition-colors"
-                      placeholder="Seu nome"
+                      placeholder="Your name"
                     />
                   </div>
                   <div>
-                    <label htmlFor="prospeccao-idade" className="block text-sm font-medium text-[#0A0A12] mb-2">
-                      Idade
+                    <label htmlFor="prospect-age" className="block text-sm font-medium text-[#0A0A12] mb-2">
+                      Age
                     </label>
                     <input
                       type="number"
-                      id="prospeccao-idade"
-                      name="prospeccao-idade"
+                      id="prospect-age"
+                      name="prospect-age"
                       className="w-full rounded-lg border-2 border-[#0A0A12]/20 bg-white px-4 py-3 text-[#0A0A12] focus:border-[#25E5C5] focus:ring-2 focus:ring-[#25E5C5]/20 transition-colors"
                       placeholder="Ex: 25"
                     />
                   </div>
                 </div>
                 <div>
-                  <label htmlFor="prospeccao-email" className="block text-sm font-medium text-[#0A0A12] mb-2">
+                  <label htmlFor="prospect-email" className="block text-sm font-medium text-[#0A0A12] mb-2">
                     Email
                   </label>
                   <input
                     type="email"
-                    id="prospeccao-email"
-                    name="prospeccao-email"
+                    id="prospect-email"
+                    name="prospect-email"
                     className="w-full rounded-lg border-2 border-[#0A0A12]/20 bg-white px-4 py-3 text-[#0A0A12] focus:border-[#25E5C5] focus:ring-2 focus:ring-[#25E5C5]/20 transition-colors"
-                    placeholder="seu@email.com"
+                    placeholder="your@email.com"
                   />
                 </div>
                 <div>
-                  <label htmlFor="prospeccao-whatsapp" className="block text-sm font-medium text-[#0A0A12] mb-2">
+                  <label htmlFor="prospect-whatsapp" className="block text-sm font-medium text-[#0A0A12] mb-2">
                     WhatsApp
                   </label>
                   <input
                     type="tel"
-                    id="prospeccao-whatsapp"
-                    name="prospeccao-whatsapp"
+                    id="prospect-whatsapp"
+                    name="prospect-whatsapp"
                     className="w-full rounded-lg border-2 border-[#0A0A12]/20 bg-white px-4 py-3 text-[#0A0A12] focus:border-[#25E5C5] focus:ring-2 focus:ring-[#25E5C5]/20 transition-colors"
                     placeholder="(00) 00000-0000"
                   />
                 </div>
                 <div>
-                  <label htmlFor="prospeccao-interesse" className="block text-sm font-medium text-[#0A0A12] mb-2">
-                    Por que tem interesse em renda passiva?
+                  <label htmlFor="prospect-interest" className="block text-sm font-medium text-[#0A0A12] mb-2">
+                    Why are you interested in passive income?
                   </label>
                   <textarea
-                    id="prospeccao-interesse"
-                    name="prospeccao-interesse"
+                    id="prospect-interest"
+                    name="prospect-interest"
                     rows={4}
                     className="w-full rounded-lg border-2 border-[#0A0A12]/20 bg-white px-4 py-3 text-[#0A0A12] focus:border-[#25E5C5] focus:ring-2 focus:ring-[#25E5C5]/20 transition-colors"
-                    placeholder="Conte-nos sobre seus objetivos e por que quer construir uma renda passiva..."
+                    placeholder="Tell us about your goals and why you want to build passive income..."
                   ></textarea>
                 </div>
                 <button
                   type="submit"
                   className="w-full rounded-lg bg-gradient-to-r from-[#FFD642] to-[#25E5C5] px-6 py-4 text-base font-semibold text-[#0A0A12] shadow-sm transition-all hover:shadow-lg hover:scale-105"
                 >
-                  Quero Saber Mais
+                  I Want to Know More
                 </button>
               </form>
             </div>
@@ -170,4 +170,3 @@ export default function RendaPassivaPage() {
     </div>
   );
 }
-

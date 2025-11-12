@@ -13,25 +13,25 @@ export default function Footer() {
               </span>
             </Link>
             <p className="mt-4 text-sm text-[#F8F8F8]/80">
-              Transformando marketing em resultados desde 2024.
+              Transforming marketing into results since 2024.
             </p>
           </div>
           <div>
             <h3 className="text-sm font-semibold text-[#FFD642]">Links</h3>
             <ul className="mt-4 space-y-2">
               <li>
-                <Link href="/cliente" className="text-sm text-[#F8F8F8]/70 hover:text-[#25E5C5] transition-colors">
-                  Para Clientes
+                <Link href="/client" className="text-sm text-[#F8F8F8]/70 hover:text-[#25E5C5] transition-colors">
+                  For Clients
                 </Link>
               </li>
               <li>
                 <Link href="/editor" className="text-sm text-[#F8F8F8]/70 hover:text-[#25E5C5] transition-colors">
-                  Para Editores
+                  For Editors
                 </Link>
               </li>
               <li>
-                <Link href="/rendaPassiva" className="text-sm text-[#F8F8F8]/70 hover:text-[#25E5C5] transition-colors">
-                  Renda Passiva
+                <Link href="/passiveIncome" className="text-sm text-[#F8F8F8]/70 hover:text-[#25E5C5] transition-colors">
+                  Passive Income
                 </Link>
               </li>
             </ul>
@@ -59,11 +59,10 @@ export default function Footer() {
         </div>
         <div className="mt-8 border-t border-[#F8F8F8]/10 pt-8">
           <p className="text-center text-sm text-[#F8F8F8]/60">
-            &copy; 2024 Alchemy. Todos os direitos reservados.
+            &copy; 2024 Alchemy. All rights reserved.
           </p>
         </div>
       </div>
     </footer>
   );
 }
-

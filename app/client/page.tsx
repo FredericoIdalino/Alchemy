@@ -1,7 +1,7 @@
 import Navigation from "../components/Navigation";
 import Footer from "../components/Footer";
 
-export default function ClientePage() {
+export default function ClientPage() {
   return (
     <div className="min-h-screen bg-[#F8F8F8]">
       <Navigation />
@@ -11,13 +11,13 @@ export default function ClientePage() {
         <div className="mx-auto max-w-7xl">
           <div className="mx-auto max-w-3xl text-center">
             <h1 className="text-5xl font-bold tracking-tight text-[#0A0A12] sm:text-6xl lg:text-7xl">
-              Para{" "}
+              For{" "}
               <span className="bg-gradient-to-r from-[#FFD642] to-[#25E5C5] bg-clip-text text-transparent">
-                Clientes
+                Clients
               </span>
             </h1>
             <p className="mt-6 text-xl leading-8 text-[#0A0A12]/80">
-              Contrate serviços de marketing de alta qualidade e transforme sua presença digital
+              Hire high-quality marketing services and transform your digital presence
             </p>
           </div>
         </div>
@@ -37,10 +37,10 @@ export default function ClientePage() {
                   </svg>
                 </div>
                 <h3 className="text-2xl font-bold text-[#0A0A12] mb-4">
-                  Gestão de Tráfego
+                  Traffic Management
                 </h3>
                 <p className="text-[#0A0A12]/70 leading-relaxed">
-                  Otimizamos seus anúncios para maximizar ROI. Gestão completa de campanhas em Google Ads, Meta Ads e mais.
+                  We optimize your ads to maximize ROI. Complete campaign management on Google Ads, Meta Ads and more.
                 </p>
               </div>
             </div>
@@ -55,10 +55,10 @@ export default function ClientePage() {
                   </svg>
                 </div>
                 <h3 className="text-2xl font-bold text-[#0A0A12] mb-4">
-                  Criação de Conteúdo
+                  Content Creation
                 </h3>
                 <p className="text-[#0A0A12]/70 leading-relaxed">
-                  Conteúdo que converte. Vídeos, posts, reels e muito mais criados por nossa equipe de editores especializados.
+                  Content that converts. Videos, posts, reels and more created by our team of specialized editors.
                 </p>
               </div>
             </div>
@@ -73,93 +73,93 @@ export default function ClientePage() {
                   </svg>
                 </div>
                 <h3 className="text-2xl font-bold text-[#0A0A12] mb-4">
-                  Estratégia Completa
+                  Complete Strategy
                 </h3>
                 <p className="text-[#0A0A12]/70 leading-relaxed">
-                  Planejamento estratégico personalizado. Análise de mercado, definição de personas e roadmap completo.
+                  Personalized strategic planning. Market analysis, persona definition and complete roadmap.
                 </p>
               </div>
             </div>
           </div>
 
-          {/* Formulário Cliente */}
+          {/* Client Form */}
           <div className="mt-20 mx-auto max-w-2xl">
             <div className="rounded-2xl bg-gradient-to-br from-[#25E5C5]/10 to-[#FFD642]/10 p-8 border border-[#0A0A12]/10">
               <h3 className="text-2xl font-bold text-[#0A0A12] mb-6 text-center">
-                Solicite um Orçamento
+                Request a Quote
               </h3>
               <form className="space-y-6">
                 <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
                   <div>
-                    <label htmlFor="cliente-nome" className="block text-sm font-medium text-[#0A0A12] mb-2">
-                      Nome
+                    <label htmlFor="client-name" className="block text-sm font-medium text-[#0A0A12] mb-2">
+                      Name
                     </label>
                     <input
                       type="text"
-                      id="cliente-nome"
-                      name="cliente-nome"
+                      id="client-name"
+                      name="client-name"
                       className="w-full rounded-lg border-2 border-[#0A0A12]/20 bg-white px-4 py-3 text-[#0A0A12] focus:border-[#25E5C5] focus:ring-2 focus:ring-[#25E5C5]/20 transition-colors"
-                      placeholder="Seu nome"
+                      placeholder="Your name"
                     />
                   </div>
                   <div>
-                    <label htmlFor="cliente-empresa" className="block text-sm font-medium text-[#0A0A12] mb-2">
-                      Empresa
+                    <label htmlFor="client-company" className="block text-sm font-medium text-[#0A0A12] mb-2">
+                      Company
                     </label>
                     <input
                       type="text"
-                      id="cliente-empresa"
-                      name="cliente-empresa"
+                      id="client-company"
+                      name="client-company"
                       className="w-full rounded-lg border-2 border-[#0A0A12]/20 bg-white px-4 py-3 text-[#0A0A12] focus:border-[#25E5C5] focus:ring-2 focus:ring-[#25E5C5]/20 transition-colors"
-                      placeholder="Nome da empresa"
+                      placeholder="Company name"
                     />
                   </div>
                 </div>
                 <div>
-                  <label htmlFor="cliente-email" className="block text-sm font-medium text-[#0A0A12] mb-2">
+                  <label htmlFor="client-email" className="block text-sm font-medium text-[#0A0A12] mb-2">
                     Email
                   </label>
                   <input
                     type="email"
-                    id="cliente-email"
-                    name="cliente-email"
+                    id="client-email"
+                    name="client-email"
                     className="w-full rounded-lg border-2 border-[#0A0A12]/20 bg-white px-4 py-3 text-[#0A0A12] focus:border-[#25E5C5] focus:ring-2 focus:ring-[#25E5C5]/20 transition-colors"
-                    placeholder="seu@email.com"
+                    placeholder="your@email.com"
                   />
                 </div>
                 <div>
-                  <label htmlFor="cliente-servico" className="block text-sm font-medium text-[#0A0A12] mb-2">
-                    Serviço de Interesse
+                  <label htmlFor="client-service" className="block text-sm font-medium text-[#0A0A12] mb-2">
+                    Service of Interest
                   </label>
                   <select
-                    id="cliente-servico"
-                    name="cliente-servico"
+                    id="client-service"
+                    name="client-service"
                     className="w-full rounded-lg border-2 border-[#0A0A12]/20 bg-white px-4 py-3 text-[#0A0A12] focus:border-[#25E5C5] focus:ring-2 focus:ring-[#25E5C5]/20 transition-colors"
                   >
-                    <option value="">Selecione um serviço</option>
-                    <option value="gestao">Gestão de Tráfego</option>
-                    <option value="conteudo">Criação de Conteúdo</option>
-                    <option value="estrategia">Estratégia Completa</option>
-                    <option value="completo">Pacote Completo</option>
+                    <option value="">Select a service</option>
+                    <option value="traffic">Traffic Management</option>
+                    <option value="content">Content Creation</option>
+                    <option value="strategy">Complete Strategy</option>
+                    <option value="complete">Complete Package</option>
                   </select>
                 </div>
                 <div>
-                  <label htmlFor="cliente-mensagem" className="block text-sm font-medium text-[#0A0A12] mb-2">
-                    Mensagem
+                  <label htmlFor="client-message" className="block text-sm font-medium text-[#0A0A12] mb-2">
+                    Message
                   </label>
                   <textarea
-                    id="cliente-mensagem"
-                    name="cliente-mensagem"
+                    id="client-message"
+                    name="client-message"
                     rows={4}
                     className="w-full rounded-lg border-2 border-[#0A0A12]/20 bg-white px-4 py-3 text-[#0A0A12] focus:border-[#25E5C5] focus:ring-2 focus:ring-[#25E5C5]/20 transition-colors"
-                    placeholder="Conte-nos sobre seu projeto..."
+                    placeholder="Tell us about your project..."
                   ></textarea>
                 </div>
                 <button
                   type="submit"
                   className="w-full rounded-lg bg-[#FFD642] px-6 py-4 text-base font-semibold text-[#0A0A12] shadow-sm transition-all hover:bg-[#FFD642]/90 hover:shadow-lg hover:scale-105"
                 >
-                  Solicitar Orçamento
+                  Request Quote
                 </button>
               </form>
             </div>
@@ -171,4 +171,3 @@ export default function ClientePage() {
     </div>
   );
 }
-

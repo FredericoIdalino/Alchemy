@@ -11,13 +11,13 @@ export default function EditorPage() {
         <div className="mx-auto max-w-7xl">
           <div className="mx-auto max-w-3xl text-center">
             <h1 className="text-5xl font-bold tracking-tight text-[#F8F8F8] sm:text-6xl lg:text-7xl">
-              Para{" "}
+              For{" "}
               <span className="bg-gradient-to-r from-[#FFD642] to-[#25E5C5] bg-clip-text text-transparent">
-                Editores
+                Editors
               </span>
             </h1>
             <p className="mt-6 text-xl leading-8 text-[#F8F8F8]/80">
-              Junte-se à nossa equipe e trabalhe com projetos incríveis de grandes marcas
+              Join our team and work on amazing projects from major brands
             </p>
           </div>
         </div>
@@ -37,10 +37,10 @@ export default function EditorPage() {
                   </svg>
                 </div>
                 <h3 className="text-2xl font-bold text-[#F8F8F8] mb-4">
-                  Pagamentos Rápidos
+                  Fast Payments
                 </h3>
                 <p className="text-[#F8F8F8]/70 leading-relaxed">
-                  Receba seus pagamentos de forma rápida e segura. Trabalhe com projetos de grandes marcas e ganhe bem.
+                  Receive your payments quickly and securely. Work on projects from major brands and earn well.
                 </p>
               </div>
             </div>
@@ -55,10 +55,10 @@ export default function EditorPage() {
                   </svg>
                 </div>
                 <h3 className="text-2xl font-bold text-[#F8F8F8] mb-4">
-                  Projetos Diversos
+                  Diverse Projects
                 </h3>
                 <p className="text-[#F8F8F8]/70 leading-relaxed">
-                  Trabalhe com uma variedade de projetos. Vídeos, reels, posts, animações e muito mais para diferentes clientes.
+                  Work on a variety of projects. Videos, reels, posts, animations and more for different clients.
                 </p>
               </div>
             </div>
@@ -73,43 +73,43 @@ export default function EditorPage() {
                   </svg>
                 </div>
                 <h3 className="text-2xl font-bold text-[#F8F8F8] mb-4">
-                  Suporte Completo
+                  Complete Support
                 </h3>
                 <p className="text-[#F8F8F8]/70 leading-relaxed">
-                  Tenha acesso a recursos, templates e suporte da equipe. Cresça como editor trabalhando com profissionais.
+                  Have access to resources, templates and team support. Grow as an editor working with professionals.
                 </p>
               </div>
             </div>
           </div>
 
-          {/* Formulário Editor */}
+          {/* Editor Form */}
           <div className="mt-20 mx-auto max-w-2xl">
             <div className="rounded-2xl bg-gradient-to-br from-[#25E5C5]/10 to-[#FFD642]/10 p-8 border border-[#F8F8F8]/10">
               <h3 className="text-2xl font-bold text-[#F8F8F8] mb-6 text-center">
-                Candidate-se para Editor
+                Apply as Editor
               </h3>
               <form className="space-y-6">
                 <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
                   <div>
-                    <label htmlFor="editor-nome" className="block text-sm font-medium text-[#F8F8F8] mb-2">
-                      Nome
+                    <label htmlFor="editor-name" className="block text-sm font-medium text-[#F8F8F8] mb-2">
+                      Name
                     </label>
                     <input
                       type="text"
-                      id="editor-nome"
-                      name="editor-nome"
+                      id="editor-name"
+                      name="editor-name"
                       className="w-full rounded-lg border-2 border-[#F8F8F8]/20 bg-[#0A0A12] px-4 py-3 text-[#F8F8F8] focus:border-[#25E5C5] focus:ring-2 focus:ring-[#25E5C5]/20 transition-colors"
-                      placeholder="Seu nome"
+                      placeholder="Your name"
                     />
                   </div>
                   <div>
-                    <label htmlFor="editor-experiencia" className="block text-sm font-medium text-[#F8F8F8] mb-2">
-                      Anos de Experiência
+                    <label htmlFor="editor-experience" className="block text-sm font-medium text-[#F8F8F8] mb-2">
+                      Years of Experience
                     </label>
                     <input
                       type="number"
-                      id="editor-experiencia"
-                      name="editor-experiencia"
+                      id="editor-experience"
+                      name="editor-experience"
                       className="w-full rounded-lg border-2 border-[#F8F8F8]/20 bg-[#0A0A12] px-4 py-3 text-[#F8F8F8] focus:border-[#25E5C5] focus:ring-2 focus:ring-[#25E5C5]/20 transition-colors"
                       placeholder="Ex: 2"
                     />
@@ -124,55 +124,55 @@ export default function EditorPage() {
                     id="editor-email"
                     name="editor-email"
                     className="w-full rounded-lg border-2 border-[#F8F8F8]/20 bg-[#0A0A12] px-4 py-3 text-[#F8F8F8] focus:border-[#25E5C5] focus:ring-2 focus:ring-[#25E5C5]/20 transition-colors"
-                    placeholder="seu@email.com"
+                    placeholder="your@email.com"
                   />
                 </div>
                 <div>
                   <label htmlFor="editor-portfolio" className="block text-sm font-medium text-[#F8F8F8] mb-2">
-                    Link do Portfólio
+                    Portfolio Link
                   </label>
                   <input
                     type="url"
                     id="editor-portfolio"
                     name="editor-portfolio"
                     className="w-full rounded-lg border-2 border-[#F8F8F8]/20 bg-[#0A0A12] px-4 py-3 text-[#F8F8F8] focus:border-[#25E5C5] focus:ring-2 focus:ring-[#25E5C5]/20 transition-colors"
-                    placeholder="https://seuportfolio.com"
+                    placeholder="https://yourportfolio.com"
                   />
                 </div>
                 <div>
-                  <label htmlFor="editor-especialidade" className="block text-sm font-medium text-[#F8F8F8] mb-2">
-                    Especialidade
+                  <label htmlFor="editor-specialty" className="block text-sm font-medium text-[#F8F8F8] mb-2">
+                    Specialty
                   </label>
                   <select
-                    id="editor-especialidade"
-                    name="editor-especialidade"
+                    id="editor-specialty"
+                    name="editor-specialty"
                     className="w-full rounded-lg border-2 border-[#F8F8F8]/20 bg-[#0A0A12] px-4 py-3 text-[#F8F8F8] focus:border-[#25E5C5] focus:ring-2 focus:ring-[#25E5C5]/20 transition-colors"
                   >
-                    <option value="">Selecione uma especialidade</option>
-                    <option value="video">Edição de Vídeo</option>
+                    <option value="">Select a specialty</option>
+                    <option value="video">Video Editing</option>
                     <option value="reels">Reels/Shorts</option>
                     <option value="motion">Motion Graphics</option>
                     <option value="thumb">Thumbnails</option>
-                    <option value="completo">Edição Completa</option>
+                    <option value="complete">Complete Editing</option>
                   </select>
                 </div>
                 <div>
-                  <label htmlFor="editor-mensagem" className="block text-sm font-medium text-[#F8F8F8] mb-2">
-                    Conte-nos sobre você
+                  <label htmlFor="editor-message" className="block text-sm font-medium text-[#F8F8F8] mb-2">
+                    Tell us about yourself
                   </label>
                   <textarea
-                    id="editor-mensagem"
-                    name="editor-mensagem"
+                    id="editor-message"
+                    name="editor-message"
                     rows={4}
                     className="w-full rounded-lg border-2 border-[#F8F8F8]/20 bg-[#0A0A12] px-4 py-3 text-[#F8F8F8] focus:border-[#25E5C5] focus:ring-2 focus:ring-[#25E5C5]/20 transition-colors"
-                    placeholder="Fale sobre sua experiência e por que quer trabalhar conosco..."
+                    placeholder="Talk about your experience and why you want to work with us..."
                   ></textarea>
                 </div>
                 <button
                   type="submit"
                   className="w-full rounded-lg bg-[#FFD642] px-6 py-4 text-base font-semibold text-[#0A0A12] shadow-sm transition-all hover:bg-[#FFD642]/90 hover:shadow-lg hover:scale-105"
                 >
-                  Enviar Candidatura
+                  Submit Application
                 </button>
               </form>
             </div>
@@ -184,4 +184,3 @@ export default function EditorPage() {
     </div>
   );
 }
-
