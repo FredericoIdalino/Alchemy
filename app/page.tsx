@@ -36,7 +36,7 @@ export default function Home() {
                 Trabalhar Conosco
               </Link>
               <Link 
-                href="/renda-passiva"
+                href="/rendaPassiva"
                 className="rounded-lg bg-[#25E5C5] px-8 py-4 text-base font-semibold text-[#0A0A12] shadow-sm transition-all hover:bg-[#25E5C5]/90 hover:shadow-lg hover:scale-105"
               >
                 Renda Passiva
@@ -99,7 +99,7 @@ export default function Home() {
             </Link>
 
             {/* Renda Passiva Card */}
-            <Link href="/renda-passiva" className="group">
+            <Link href="/rendaPassiva" className="group">
               <div className="relative overflow-hidden rounded-2xl border border-[#0A0A12]/10 bg-white p-8 shadow-sm transition-all hover:shadow-2xl hover:border-[#25E5C5]/50 hover:-translate-y-2">
                 <div className="absolute inset-0 bg-gradient-to-br from-[#FFD642]/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
                 <div className="relative">
