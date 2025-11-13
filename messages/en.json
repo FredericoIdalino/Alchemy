@@ -58,10 +58,10 @@
   "editor": {
     "title": "For <editors>Editors</editors>",
     "subtitle": "Join our team and work on amazing projects from major brands",
-    "fastPayments": "Fast Payments",
-    "fastPaymentsDesc": "Receive your payments quickly and securely. Work on projects from major brands and earn well.",
+    "fastPayments": "Get Paid in <dollar>USD</dollar>",
+    "fastPaymentsDesc": "Receive your payments in US dollars quickly and securely. Work on projects from major US brands and earn in strong currency.",
     "diverseProjects": "Diverse Projects",
-    "diverseProjectsDesc": "Work on a variety of projects. Videos, reels, posts, animations and much more for different clients.",
+    "diverseProjectsDesc": "Work on a variety of projects. Videos, reels, posts and much more for different clients.",
     "completeSupport": "Complete Support",
     "completeSupportDesc": "Have access to resources, templates and team support. Grow as an editor working with professionals.",
     "apply": "Apply as Editor",

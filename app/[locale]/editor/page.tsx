@@ -46,7 +46,13 @@ export default function EditorPage() {
                   </svg>
                 </div>
                 <h3 className="text-2xl font-bold text-[#F8F8F8] mb-4">
-                  {t('fastPayments')}
+                  {t.rich('fastPayments', {
+                    dollar: (chunks) => (
+                      <span className="bg-gradient-to-r from-[#FFD642] to-[#25E5C5] bg-clip-text text-transparent">
+                        {chunks}
+                      </span>
+                    )
+                  })}
                 </h3>
                 <p className="text-[#F8F8F8]/70 leading-relaxed">
                   {t('fastPaymentsDesc')}

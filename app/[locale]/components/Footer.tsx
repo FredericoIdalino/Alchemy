@@ -13,21 +13,18 @@ export default function Footer() {
       <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 gap-8 md:grid-cols-4">
           <div className="col-span-1 md:col-span-2">
-            <Link href={`/${locale}`} className="flex items-center gap-2">
+            <Link href={`/${locale}`} className="flex items-center gap-3">
               <Image 
                 src="/CaldeirãoAmareloPNGTransparente.png" 
                 alt="Alchemy Logo" 
-                width={50} 
-                height={50}
-                className="h-20 w-20 object-contain"
+                width={80} 
+                height={80}
+                className="h-24 w-24 object-contain"
               />
-              <span className="text-xl font-bold text-[#F8F8F8]">
+              <span className="text-3xl font-bold text-[#F8F8F8]">
                 Alchemy
               </span>
             </Link>
-            <p className="mt-4 text-sm text-[#F8F8F8]/80">
-              {t('description')}
-            </p>
           </div>
           <div>
             <h3 className="text-sm font-semibold text-[#FFD642]">Links</h3>
