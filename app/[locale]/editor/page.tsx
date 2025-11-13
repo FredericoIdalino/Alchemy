@@ -90,102 +90,14 @@ export default function EditorPage() {
               </div>
             </div>
           </div>
-
-          {/* Editor Form */}
-          <div className="mt-20 mx-auto max-w-2xl">
-            <div className="rounded-2xl bg-gradient-to-br from-[#25E5C5]/10 to-[#FFD642]/10 p-8 border border-[#F8F8F8]/10">
-              <h3 className="text-2xl font-bold text-[#F8F8F8] mb-6 text-center">
-                {t('apply')}
-              </h3>
-              <form className="space-y-6">
-                <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
-                  <div>
-                    <label htmlFor="editor-name" className="block text-sm font-medium text-[#F8F8F8] mb-2">
-                      {t('name')}
-                    </label>
-                    <input
-                      type="text"
-                      id="editor-name"
-                      name="editor-name"
-                      className="w-full rounded-lg border-2 border-[#F8F8F8]/20 bg-[#0A0A12] px-4 py-3 text-[#F8F8F8] focus:border-[#25E5C5] focus:ring-2 focus:ring-[#25E5C5]/20 transition-colors"
-                      placeholder={t('name')}
-                    />
-                  </div>
-                  <div>
-                    <label htmlFor="editor-experience" className="block text-sm font-medium text-[#F8F8F8] mb-2">
-                      {t('experience')}
-                    </label>
-                    <input
-                      type="number"
-                      id="editor-experience"
-                      name="editor-experience"
-                      className="w-full rounded-lg border-2 border-[#F8F8F8]/20 bg-[#0A0A12] px-4 py-3 text-[#F8F8F8] focus:border-[#25E5C5] focus:ring-2 focus:ring-[#25E5C5]/20 transition-colors"
-                      placeholder="Ex: 2"
-                    />
-                  </div>
-                </div>
-                <div>
-                  <label htmlFor="editor-email" className="block text-sm font-medium text-[#F8F8F8] mb-2">
-                    {t('email')}
-                  </label>
-                  <input
-                    type="email"
-                    id="editor-email"
-                    name="editor-email"
-                    className="w-full rounded-lg border-2 border-[#F8F8F8]/20 bg-[#0A0A12] px-4 py-3 text-[#F8F8F8] focus:border-[#25E5C5] focus:ring-2 focus:ring-[#25E5C5]/20 transition-colors"
-                    placeholder="seu@email.com"
-                  />
-                </div>
-                <div>
-                  <label htmlFor="editor-portfolio" className="block text-sm font-medium text-[#F8F8F8] mb-2">
-                    {t('portfolio')}
-                  </label>
-                  <input
-                    type="url"
-                    id="editor-portfolio"
-                    name="editor-portfolio"
-                    className="w-full rounded-lg border-2 border-[#F8F8F8]/20 bg-[#0A0A12] px-4 py-3 text-[#F8F8F8] focus:border-[#25E5C5] focus:ring-2 focus:ring-[#25E5C5]/20 transition-colors"
-                    placeholder="https://seuportfolio.com"
-                  />
-                </div>
-                <div>
-                  <label htmlFor="editor-especialidade" className="block text-sm font-medium text-[#F8F8F8] mb-2">
-                    {t('specialty')}
-                  </label>
-                  <select
-                    id="editor-especialidade"
-                    name="editor-especialidade"
-                    className="w-full rounded-lg border-2 border-[#F8F8F8]/20 bg-[#0A0A12] px-4 py-3 text-[#F8F8F8] focus:border-[#25E5C5] focus:ring-2 focus:ring-[#25E5C5]/20 transition-colors"
-                  >
-                    <option value="">{t('selectSpecialty')}</option>
-                    <option value="video">{t('video')}</option>
-                    <option value="reels">{t('reels')}</option>
-                    <option value="motion">{t('motion')}</option>
-                    <option value="thumbnails">{t('thumbnails')}</option>
-                    <option value="complete">{t('complete')}</option>
-                  </select>
-                </div>
-                <div>
-                  <label htmlFor="editor-mensagem" className="block text-sm font-medium text-[#F8F8F8] mb-2">
-                    {t('tellUs')}
-                  </label>
-                  <textarea
-                    id="editor-mensagem"
-                    name="editor-mensagem"
-                    rows={4}
-                    className="w-full rounded-lg border-2 border-[#F8F8F8]/20 bg-[#0A0A12] px-4 py-3 text-[#F8F8F8] focus:border-[#25E5C5] focus:ring-2 focus:ring-[#25E5C5]/20 transition-colors"
-                    placeholder={t('tellUsPlaceholder')}
-                  ></textarea>
-                </div>
-                <button
-                  type="submit"
-                  className="w-full rounded-lg bg-[#FFD642] px-6 py-4 text-base font-semibold text-[#0A0A12] shadow-sm transition-all hover:bg-[#FFD642]/90 hover:shadow-lg hover:scale-105"
-                >
-                  {t('submit')}
-                </button>
-              </form>
-            </div>
-          </div>
+          <a
+            href="https://tally.so/r/7RlGR6"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="w-1/2 mx-auto justify-center items-center flex rounded-lg bg-[#FFD642] px-6 py-4 text-base font-semibold text-[#0A0A12] shadow-sm transition-all hover:bg-[#FFD642]/90 hover:shadow-lg hover:scale-105 mt-10 text-center"
+          >
+            {t('submit')}
+          </a>
         </div>
       </section>
 

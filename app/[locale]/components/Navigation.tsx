@@ -1,6 +1,7 @@
 'use client';
 
 import Link from "next/link";
+import Image from "next/image";
 import { useTranslations, useLocale } from 'next-intl';
 import LanguageSwitcher from './LanguageSwitcher';
 
@@ -13,7 +14,13 @@ export default function Navigation() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between">
           <Link href={`/${locale}`} className="flex items-center gap-2">
-            <div className="h-8 w-8 rounded-lg bg-gradient-to-br from-[#FFD642] to-[#25E5C5]"></div>
+            <Image 
+              src="/CaldeirãoPretoPNGTransparente.png" 
+              alt="Alchemy Logo" 
+              width={50} 
+              height={50}
+              className="h-20 w-20 object-contain"
+            />
             <span className="text-xl font-bold text-[#0A0A12]">
               Alchemy
             </span>
@@ -31,12 +38,6 @@ export default function Navigation() {
           </div>
           <div className="flex items-center gap-4">
             <LanguageSwitcher />
-            <Link 
-              href={`/${locale}/client`}
-              className="rounded-lg bg-[#FFD642] px-4 py-2 text-sm font-medium text-[#0A0A12] transition-all hover:bg-[#FFD642]/90 hover:shadow-lg"
-            >
-              {t('getStarted')}
-            </Link>
           </div>
         </div>
       </div>

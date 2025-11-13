@@ -13,6 +13,9 @@
     "passiveIncome": "Renda Passiva"
   },
   "home": {
+    "aboutTitle": "Sobre Nós",
+    "aboutText": "Idealizada por Alexandre Dubugras, a Alchemy conecta editores brasileiros a empresas dos EUA que buscam elevar a qualidade e eficiência de seu marketing digital.\n\nUnimos criatividade e estratégia para transformar conteúdo em resultados reais, aproximando culturas e impulsionando marcas no cenário global.",
+    "aleDubugras": "Ale Dubugras",
     "choosePath": "Escolha seu caminho",
     "threeWays": "Três formas de trabalhar com a Alchemy",
     "forClients": "Para Clientes",
@@ -20,10 +23,10 @@
     "forEditors": "Para Editores",
     "forEditorsDesc": "Junte-se à nossa equipe. Trabalhe com projetos incríveis, receba pagamentos rápidos e tenha suporte completo.",
     "passiveIncome": "Renda Passiva",
-    "passiveIncomeDesc": "Construa uma fonte de renda passiva. Ganhos recorrentes, liberdade financeira e crescimento contínuo."
+    "passiveIncomeDesc": "Construa uma fonte de renda passiva postando vídeos, ganhos baseados no os resultador dos posts."
   },
   "footer": {
-    "description": "Transformando marketing em resultados desde 2024.",
+    "description": "Transformando marketing em resultados desde 2025.",
     "forClients": "Para Clientes",
     "forEditors": "Para Editores",
     "passiveIncome": "Renda Passiva",
@@ -79,22 +82,12 @@
   },
   "passiveIncome": {
     "title": "Construa sua <passiveIncome>Renda Passiva</passiveIncome>",
-    "subtitle": "Trabalhe conosco e construa uma fonte de renda passiva. Ganhe enquanto você dorme.",
-    "recurringEarnings": "Ganhos Recorrentes",
-    "recurringEarningsDesc": "Receba pagamentos mensais recorrentes trabalhando com nossos clientes. Renda estável e previsível.",
-    "financialFreedom": "Liberdade Financeira",
-    "financialFreedomDesc": "Trabalhe de onde quiser, quando quiser. Construa sua liberdade financeira com projetos que geram renda passiva.",
-    "continuousGrowth": "Crescimento Contínuo",
-    "continuousGrowthDesc": "Aumente sua renda ao longo do tempo. Quanto mais você trabalha, mais oportunidades de crescimento você tem.",
-    "interested": "Interessado em Renda Passiva?",
-    "interestedDesc": "Preencha o formulário abaixo e nossa equipe entrará em contato para explicar como você pode começar a construir sua renda passiva conosco.",
-    "name": "Nome",
-    "age": "Idade",
-    "email": "Email",
-    "whatsapp": "WhatsApp",
-    "whyInterested": "Por que tem interesse em renda passiva?",
-    "whyInterestedPlaceholder": "Conte-nos sobre seus objetivos e por que quer construir uma renda passiva...",
-    "submit": "Quero Saber Mais"
+    "subtitle": "Trabalhe conosco e construa uma fonte de renda passiva postando dos EUA",
+    "opportunityTitle": "Como Funciona",
+    "opportunityText": "Você precisará criar uma conta nos EUA, aquecê-la adequadamente e postar os vídeos que enviaremos. É simples, mas requer comprometimento.",
+    "whyTitle": "Por Que Precisamos Disso?",
+    "whyText": "Do Brasil, é muito difícil utilizar VPNs para postar nos EUA. As plataformas detectam facilmente e bloqueiam contas. Por isso, precisamos de pessoas que realmente estejam nos Estados Unidos para garantir que nossos conteúdos alcancem o público certo.",
+    "submit": "Quero Participar"
   }
 }
 

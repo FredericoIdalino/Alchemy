@@ -13,6 +13,9 @@
     "passiveIncome": "Passive Income"
   },
   "home": {
+    "aboutTitle": "About Us",
+    "aboutText": "Founded by Alexandre Dubugras, Alchemy connects Brazilian editors with US companies seeking to elevate the quality and efficiency of their digital marketing.\n\nWe combine creativity and strategy to transform content into real results, bringing cultures together and driving brands in the global landscape.",
+    "aleDubugras": "Ale Dubugras",
     "choosePath": "Choose your path",
     "threeWays": "Three ways to work with Alchemy",
     "forClients": "For Clients",
@@ -20,10 +23,10 @@
     "forEditors": "For Editors",
     "forEditorsDesc": "Join our team. Work on amazing projects, receive fast payments and have complete support.",
     "passiveIncome": "Passive Income",
-    "passiveIncomeDesc": "Build a passive income source. Recurring earnings, financial freedom and continuous growth."
+    "passiveIncomeDesc": "Build a passive income stream by posting videos — your earnings are based on the performance of your posts."
   },
   "footer": {
-    "description": "Transforming marketing into results since 2024.",
+    "description": "Transforming marketing into results since 2025.",
     "forClients": "For Clients",
     "forEditors": "For Editors",
     "passiveIncome": "Passive Income",
@@ -79,22 +82,12 @@
   },
   "passiveIncome": {
     "title": "Build your <passiveIncome>Passive Income</passiveIncome>",
-    "subtitle": "Work with us and build a passive income source. Earn while you sleep.",
-    "recurringEarnings": "Recurring Earnings",
-    "recurringEarningsDesc": "Receive monthly recurring payments working with our clients. Stable and predictable income.",
-    "financialFreedom": "Financial Freedom",
-    "financialFreedomDesc": "Work from anywhere, whenever you want. Build your financial freedom with projects that generate passive income.",
-    "continuousGrowth": "Continuous Growth",
-    "continuousGrowthDesc": "Increase your income over time. The more you work, the more growth opportunities you have.",
-    "interested": "Interested in Passive Income?",
-    "interestedDesc": "Fill out the form below and our team will contact you to explain how you can start building your passive income with us.",
-    "name": "Name",
-    "age": "Age",
-    "email": "Email",
-    "whatsapp": "WhatsApp",
-    "whyInterested": "Why are you interested in passive income?",
-    "whyInterestedPlaceholder": "Tell us about your goals and why you want to build a passive income...",
-    "submit": "I Want to Know More"
+    "subtitle": "Work with us and build a passive income source posting from the USA",
+    "opportunityTitle": "How It Works",
+    "opportunityText": "You'll need to create an account in the USA, warm it up properly, and post the videos we send you. It's simple, but requires commitment.",
+    "whyTitle": "Why Do We Need This?",
+    "whyText": "From Brazil, it's very difficult to use VPNs to post in the USA. Platforms easily detect and block accounts. That's why we need people who are actually in the United States to ensure our content reaches the right audience.",
+    "submit": "I Want to participate"
   }
 }
 
