@@ -1,7 +1,13 @@
+'use client';
+
+import { useTranslations, useLocale } from 'next-intl';
 import Navigation from "../components/Navigation";
 import Footer from "../components/Footer";
 
 export default function EditorPage() {
+  const t = useTranslations('editor');
+  const locale = useLocale();
+
   return (
     <div className="min-h-screen bg-[#F8F8F8]">
       <Navigation />
@@ -11,13 +17,16 @@ export default function EditorPage() {
         <div className="mx-auto max-w-7xl">
           <div className="mx-auto max-w-3xl text-center">
             <h1 className="text-5xl font-bold tracking-tight text-[#F8F8F8] sm:text-6xl lg:text-7xl">
-              For{" "}
-              <span className="bg-gradient-to-r from-[#FFD642] to-[#25E5C5] bg-clip-text text-transparent">
-                Editors
-              </span>
+              {t.rich('title', {
+                editors: (chunks) => (
+                  <span className="bg-gradient-to-r from-[#FFD642] to-[#25E5C5] bg-clip-text text-transparent">
+                    {chunks}
+                  </span>
+                )
+              })}
             </h1>
             <p className="mt-6 text-xl leading-8 text-[#F8F8F8]/80">
-              Join our team and work on amazing projects from major brands
+              {t('subtitle')}
             </p>
           </div>
         </div>
@@ -37,10 +46,10 @@ export default function EditorPage() {
                   </svg>
                 </div>
                 <h3 className="text-2xl font-bold text-[#F8F8F8] mb-4">
-                  Fast Payments
+                  {t('fastPayments')}
                 </h3>
                 <p className="text-[#F8F8F8]/70 leading-relaxed">
-                  Receive your payments quickly and securely. Work on projects from major brands and earn well.
+                  {t('fastPaymentsDesc')}
                 </p>
               </div>
             </div>
@@ -55,10 +64,10 @@ export default function EditorPage() {
                   </svg>
                 </div>
                 <h3 className="text-2xl font-bold text-[#F8F8F8] mb-4">
-                  Diverse Projects
+                  {t('diverseProjects')}
                 </h3>
                 <p className="text-[#F8F8F8]/70 leading-relaxed">
-                  Work on a variety of projects. Videos, reels, posts, animations and more for different clients.
+                  {t('diverseProjectsDesc')}
                 </p>
               </div>
             </div>
@@ -73,10 +82,10 @@ export default function EditorPage() {
                   </svg>
                 </div>
                 <h3 className="text-2xl font-bold text-[#F8F8F8] mb-4">
-                  Complete Support
+                  {t('completeSupport')}
                 </h3>
                 <p className="text-[#F8F8F8]/70 leading-relaxed">
-                  Have access to resources, templates and team support. Grow as an editor working with professionals.
+                  {t('completeSupportDesc')}
                 </p>
               </div>
             </div>
@@ -86,25 +95,25 @@ export default function EditorPage() {
           <div className="mt-20 mx-auto max-w-2xl">
             <div className="rounded-2xl bg-gradient-to-br from-[#25E5C5]/10 to-[#FFD642]/10 p-8 border border-[#F8F8F8]/10">
               <h3 className="text-2xl font-bold text-[#F8F8F8] mb-6 text-center">
-                Apply as Editor
+                {t('apply')}
               </h3>
               <form className="space-y-6">
                 <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
                   <div>
                     <label htmlFor="editor-name" className="block text-sm font-medium text-[#F8F8F8] mb-2">
-                      Name
+                      {t('name')}
                     </label>
                     <input
                       type="text"
                       id="editor-name"
                       name="editor-name"
                       className="w-full rounded-lg border-2 border-[#F8F8F8]/20 bg-[#0A0A12] px-4 py-3 text-[#F8F8F8] focus:border-[#25E5C5] focus:ring-2 focus:ring-[#25E5C5]/20 transition-colors"
-                      placeholder="Your name"
+                      placeholder={t('name')}
                     />
                   </div>
                   <div>
                     <label htmlFor="editor-experience" className="block text-sm font-medium text-[#F8F8F8] mb-2">
-                      Years of Experience
+                      {t('experience')}
                     </label>
                     <input
                       type="number"
@@ -117,62 +126,62 @@ export default function EditorPage() {
                 </div>
                 <div>
                   <label htmlFor="editor-email" className="block text-sm font-medium text-[#F8F8F8] mb-2">
-                    Email
+                    {t('email')}
                   </label>
                   <input
                     type="email"
                     id="editor-email"
                     name="editor-email"
                     className="w-full rounded-lg border-2 border-[#F8F8F8]/20 bg-[#0A0A12] px-4 py-3 text-[#F8F8F8] focus:border-[#25E5C5] focus:ring-2 focus:ring-[#25E5C5]/20 transition-colors"
-                    placeholder="your@email.com"
+                    placeholder="seu@email.com"
                   />
                 </div>
                 <div>
                   <label htmlFor="editor-portfolio" className="block text-sm font-medium text-[#F8F8F8] mb-2">
-                    Portfolio Link
+                    {t('portfolio')}
                   </label>
                   <input
                     type="url"
                     id="editor-portfolio"
                     name="editor-portfolio"
                     className="w-full rounded-lg border-2 border-[#F8F8F8]/20 bg-[#0A0A12] px-4 py-3 text-[#F8F8F8] focus:border-[#25E5C5] focus:ring-2 focus:ring-[#25E5C5]/20 transition-colors"
-                    placeholder="https://yourportfolio.com"
+                    placeholder="https://seuportfolio.com"
                   />
                 </div>
                 <div>
-                  <label htmlFor="editor-specialty" className="block text-sm font-medium text-[#F8F8F8] mb-2">
-                    Specialty
+                  <label htmlFor="editor-especialidade" className="block text-sm font-medium text-[#F8F8F8] mb-2">
+                    {t('specialty')}
                   </label>
                   <select
-                    id="editor-specialty"
-                    name="editor-specialty"
+                    id="editor-especialidade"
+                    name="editor-especialidade"
                     className="w-full rounded-lg border-2 border-[#F8F8F8]/20 bg-[#0A0A12] px-4 py-3 text-[#F8F8F8] focus:border-[#25E5C5] focus:ring-2 focus:ring-[#25E5C5]/20 transition-colors"
                   >
-                    <option value="">Select a specialty</option>
-                    <option value="video">Video Editing</option>
-                    <option value="reels">Reels/Shorts</option>
-                    <option value="motion">Motion Graphics</option>
-                    <option value="thumb">Thumbnails</option>
-                    <option value="complete">Complete Editing</option>
+                    <option value="">{t('selectSpecialty')}</option>
+                    <option value="video">{t('video')}</option>
+                    <option value="reels">{t('reels')}</option>
+                    <option value="motion">{t('motion')}</option>
+                    <option value="thumbnails">{t('thumbnails')}</option>
+                    <option value="complete">{t('complete')}</option>
                   </select>
                 </div>
                 <div>
-                  <label htmlFor="editor-message" className="block text-sm font-medium text-[#F8F8F8] mb-2">
-                    Tell us about yourself
+                  <label htmlFor="editor-mensagem" className="block text-sm font-medium text-[#F8F8F8] mb-2">
+                    {t('tellUs')}
                   </label>
                   <textarea
-                    id="editor-message"
-                    name="editor-message"
+                    id="editor-mensagem"
+                    name="editor-mensagem"
                     rows={4}
                     className="w-full rounded-lg border-2 border-[#F8F8F8]/20 bg-[#0A0A12] px-4 py-3 text-[#F8F8F8] focus:border-[#25E5C5] focus:ring-2 focus:ring-[#25E5C5]/20 transition-colors"
-                    placeholder="Talk about your experience and why you want to work with us..."
+                    placeholder={t('tellUsPlaceholder')}
                   ></textarea>
                 </div>
                 <button
                   type="submit"
                   className="w-full rounded-lg bg-[#FFD642] px-6 py-4 text-base font-semibold text-[#0A0A12] shadow-sm transition-all hover:bg-[#FFD642]/90 hover:shadow-lg hover:scale-105"
                 >
-                  Submit Application
+                  {t('submit')}
                 </button>
               </form>
             </div>
@@ -184,3 +193,4 @@ export default function EditorPage() {
     </div>
   );
 }
+

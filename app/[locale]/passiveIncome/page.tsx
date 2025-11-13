@@ -1,7 +1,13 @@
+'use client';
+
+import { useTranslations, useLocale } from 'next-intl';
 import Navigation from "../components/Navigation";
 import Footer from "../components/Footer";
 
 export default function PassiveIncomePage() {
+  const t = useTranslations('passiveIncome');
+  const locale = useLocale();
+
   return (
     <div className="min-h-screen bg-[#F8F8F8]">
       <Navigation />
@@ -11,13 +17,16 @@ export default function PassiveIncomePage() {
         <div className="mx-auto max-w-7xl">
           <div className="mx-auto max-w-3xl text-center">
             <h1 className="text-5xl font-bold tracking-tight text-[#0A0A12] sm:text-6xl lg:text-7xl">
-              Build Your{" "}
-              <span className="bg-gradient-to-r from-[#FFD642] to-[#25E5C5] bg-clip-text text-transparent">
-                Passive Income
-              </span>
+              {t.rich('title', {
+                passiveIncome: (chunks) => (
+                  <span className="bg-gradient-to-r from-[#FFD642] to-[#25E5C5] bg-clip-text text-transparent">
+                    {chunks}
+                  </span>
+                )
+              })}
             </h1>
             <p className="mt-6 text-xl leading-8 text-[#0A0A12]/80">
-              Work with us and build a passive income source. Earn while you sleep.
+              {t('subtitle')}
             </p>
           </div>
         </div>
@@ -37,10 +46,10 @@ export default function PassiveIncomePage() {
                   </svg>
                 </div>
                 <h3 className="text-2xl font-bold text-[#0A0A12] mb-4">
-                  Recurring Earnings
+                  {t('recurringEarnings')}
                 </h3>
                 <p className="text-[#0A0A12]/70 leading-relaxed">
-                  Receive monthly recurring payments working with our clients. Stable and predictable income.
+                  {t('recurringEarningsDesc')}
                 </p>
               </div>
             </div>
@@ -55,10 +64,10 @@ export default function PassiveIncomePage() {
                   </svg>
                 </div>
                 <h3 className="text-2xl font-bold text-[#0A0A12] mb-4">
-                  Financial Freedom
+                  {t('financialFreedom')}
                 </h3>
                 <p className="text-[#0A0A12]/70 leading-relaxed">
-                  Work from wherever you want, whenever you want. Build your financial freedom with projects that generate passive income.
+                  {t('financialFreedomDesc')}
                 </p>
               </div>
             </div>
@@ -73,10 +82,10 @@ export default function PassiveIncomePage() {
                   </svg>
                 </div>
                 <h3 className="text-2xl font-bold text-[#0A0A12] mb-4">
-                  Continuous Growth
+                  {t('continuousGrowth')}
                 </h3>
                 <p className="text-[#0A0A12]/70 leading-relaxed">
-                  Increase your income over time. The more you work, the more growth opportunities you have.
+                  {t('continuousGrowthDesc')}
                 </p>
               </div>
             </div>
@@ -86,28 +95,28 @@ export default function PassiveIncomePage() {
           <div className="mt-20 mx-auto max-w-2xl">
             <div className="rounded-2xl bg-gradient-to-br from-[#FFD642]/10 to-[#25E5C5]/10 p-8 border border-[#0A0A12]/10">
               <h3 className="text-2xl font-bold text-[#0A0A12] mb-6 text-center">
-                Interested in Passive Income?
+                {t('interested')}
               </h3>
               <p className="text-center text-[#0A0A12]/70 mb-8">
-                Fill out the form below and our team will contact you to explain how you can start building your passive income with us.
+                {t('interestedDesc')}
               </p>
               <form className="space-y-6">
                 <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
                   <div>
                     <label htmlFor="prospect-name" className="block text-sm font-medium text-[#0A0A12] mb-2">
-                      Name
+                      {t('name')}
                     </label>
                     <input
                       type="text"
                       id="prospect-name"
                       name="prospect-name"
                       className="w-full rounded-lg border-2 border-[#0A0A12]/20 bg-white px-4 py-3 text-[#0A0A12] focus:border-[#25E5C5] focus:ring-2 focus:ring-[#25E5C5]/20 transition-colors"
-                      placeholder="Your name"
+                      placeholder={t('name')}
                     />
                   </div>
                   <div>
                     <label htmlFor="prospect-age" className="block text-sm font-medium text-[#0A0A12] mb-2">
-                      Age
+                      {t('age')}
                     </label>
                     <input
                       type="number"
@@ -120,19 +129,19 @@ export default function PassiveIncomePage() {
                 </div>
                 <div>
                   <label htmlFor="prospect-email" className="block text-sm font-medium text-[#0A0A12] mb-2">
-                    Email
+                    {t('email')}
                   </label>
                   <input
                     type="email"
                     id="prospect-email"
                     name="prospect-email"
                     className="w-full rounded-lg border-2 border-[#0A0A12]/20 bg-white px-4 py-3 text-[#0A0A12] focus:border-[#25E5C5] focus:ring-2 focus:ring-[#25E5C5]/20 transition-colors"
-                    placeholder="your@email.com"
+                    placeholder="seu@email.com"
                   />
                 </div>
                 <div>
                   <label htmlFor="prospect-whatsapp" className="block text-sm font-medium text-[#0A0A12] mb-2">
-                    WhatsApp
+                    {t('whatsapp')}
                   </label>
                   <input
                     type="tel"
@@ -144,21 +153,21 @@ export default function PassiveIncomePage() {
                 </div>
                 <div>
                   <label htmlFor="prospect-interest" className="block text-sm font-medium text-[#0A0A12] mb-2">
-                    Why are you interested in passive income?
+                    {t('whyInterested')}
                   </label>
                   <textarea
                     id="prospect-interest"
                     name="prospect-interest"
                     rows={4}
                     className="w-full rounded-lg border-2 border-[#0A0A12]/20 bg-white px-4 py-3 text-[#0A0A12] focus:border-[#25E5C5] focus:ring-2 focus:ring-[#25E5C5]/20 transition-colors"
-                    placeholder="Tell us about your goals and why you want to build passive income..."
+                    placeholder={t('whyInterestedPlaceholder')}
                   ></textarea>
                 </div>
                 <button
                   type="submit"
                   className="w-full rounded-lg bg-gradient-to-r from-[#FFD642] to-[#25E5C5] px-6 py-4 text-base font-semibold text-[#0A0A12] shadow-sm transition-all hover:shadow-lg hover:scale-105"
                 >
-                  I Want to Know More
+                  {t('submit')}
                 </button>
               </form>
             </div>
@@ -170,3 +179,4 @@ export default function PassiveIncomePage() {
     </div>
   );
 }
+

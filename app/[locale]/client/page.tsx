@@ -1,7 +1,13 @@
+'use client';
+
+import { useTranslations, useLocale } from 'next-intl';
 import Navigation from "../components/Navigation";
 import Footer from "../components/Footer";
 
 export default function ClientPage() {
+  const t = useTranslations('client');
+  const locale = useLocale();
+
   return (
     <div className="min-h-screen bg-[#F8F8F8]">
       <Navigation />
@@ -11,13 +17,16 @@ export default function ClientPage() {
         <div className="mx-auto max-w-7xl">
           <div className="mx-auto max-w-3xl text-center">
             <h1 className="text-5xl font-bold tracking-tight text-[#0A0A12] sm:text-6xl lg:text-7xl">
-              For{" "}
-              <span className="bg-gradient-to-r from-[#FFD642] to-[#25E5C5] bg-clip-text text-transparent">
-                Clients
-              </span>
+              {t.rich('title', {
+                clients: (chunks) => (
+                  <span className="bg-gradient-to-r from-[#FFD642] to-[#25E5C5] bg-clip-text text-transparent">
+                    {chunks}
+                  </span>
+                )
+              })}
             </h1>
             <p className="mt-6 text-xl leading-8 text-[#0A0A12]/80">
-              Hire high-quality marketing services and transform your digital presence
+              {t('subtitle')}
             </p>
           </div>
         </div>
@@ -37,10 +46,10 @@ export default function ClientPage() {
                   </svg>
                 </div>
                 <h3 className="text-2xl font-bold text-[#0A0A12] mb-4">
-                  Traffic Management
+                  {t('trafficManagement')}
                 </h3>
                 <p className="text-[#0A0A12]/70 leading-relaxed">
-                  We optimize your ads to maximize ROI. Complete campaign management on Google Ads, Meta Ads and more.
+                  {t('trafficManagementDesc')}
                 </p>
               </div>
             </div>
@@ -55,10 +64,10 @@ export default function ClientPage() {
                   </svg>
                 </div>
                 <h3 className="text-2xl font-bold text-[#0A0A12] mb-4">
-                  Content Creation
+                  {t('contentCreation')}
                 </h3>
                 <p className="text-[#0A0A12]/70 leading-relaxed">
-                  Content that converts. Videos, posts, reels and more created by our team of specialized editors.
+                  {t('contentCreationDesc')}
                 </p>
               </div>
             </div>
@@ -73,10 +82,10 @@ export default function ClientPage() {
                   </svg>
                 </div>
                 <h3 className="text-2xl font-bold text-[#0A0A12] mb-4">
-                  Complete Strategy
+                  {t('completeStrategy')}
                 </h3>
                 <p className="text-[#0A0A12]/70 leading-relaxed">
-                  Personalized strategic planning. Market analysis, persona definition and complete roadmap.
+                  {t('completeStrategyDesc')}
                 </p>
               </div>
             </div>
@@ -86,80 +95,80 @@ export default function ClientPage() {
           <div className="mt-20 mx-auto max-w-2xl">
             <div className="rounded-2xl bg-gradient-to-br from-[#25E5C5]/10 to-[#FFD642]/10 p-8 border border-[#0A0A12]/10">
               <h3 className="text-2xl font-bold text-[#0A0A12] mb-6 text-center">
-                Request a Quote
+                {t('requestQuote')}
               </h3>
               <form className="space-y-6">
                 <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
                   <div>
                     <label htmlFor="client-name" className="block text-sm font-medium text-[#0A0A12] mb-2">
-                      Name
+                      {t('name')}
                     </label>
                     <input
                       type="text"
                       id="client-name"
                       name="client-name"
                       className="w-full rounded-lg border-2 border-[#0A0A12]/20 bg-white px-4 py-3 text-[#0A0A12] focus:border-[#25E5C5] focus:ring-2 focus:ring-[#25E5C5]/20 transition-colors"
-                      placeholder="Your name"
+                      placeholder={t('name')}
                     />
                   </div>
                   <div>
                     <label htmlFor="client-company" className="block text-sm font-medium text-[#0A0A12] mb-2">
-                      Company
+                      {t('company')}
                     </label>
                     <input
                       type="text"
                       id="client-company"
                       name="client-company"
                       className="w-full rounded-lg border-2 border-[#0A0A12]/20 bg-white px-4 py-3 text-[#0A0A12] focus:border-[#25E5C5] focus:ring-2 focus:ring-[#25E5C5]/20 transition-colors"
-                      placeholder="Company name"
+                      placeholder={t('company')}
                     />
                   </div>
                 </div>
                 <div>
                   <label htmlFor="client-email" className="block text-sm font-medium text-[#0A0A12] mb-2">
-                    Email
+                    {t('email')}
                   </label>
                   <input
                     type="email"
                     id="client-email"
                     name="client-email"
                     className="w-full rounded-lg border-2 border-[#0A0A12]/20 bg-white px-4 py-3 text-[#0A0A12] focus:border-[#25E5C5] focus:ring-2 focus:ring-[#25E5C5]/20 transition-colors"
-                    placeholder="your@email.com"
+                    placeholder="seu@email.com"
                   />
                 </div>
                 <div>
                   <label htmlFor="client-service" className="block text-sm font-medium text-[#0A0A12] mb-2">
-                    Service of Interest
+                    {t('service')}
                   </label>
                   <select
                     id="client-service"
                     name="client-service"
                     className="w-full rounded-lg border-2 border-[#0A0A12]/20 bg-white px-4 py-3 text-[#0A0A12] focus:border-[#25E5C5] focus:ring-2 focus:ring-[#25E5C5]/20 transition-colors"
                   >
-                    <option value="">Select a service</option>
-                    <option value="traffic">Traffic Management</option>
-                    <option value="content">Content Creation</option>
-                    <option value="strategy">Complete Strategy</option>
-                    <option value="complete">Complete Package</option>
+                    <option value="">{t('selectService')}</option>
+                    <option value="traffic">{t('traffic')}</option>
+                    <option value="content">{t('content')}</option>
+                    <option value="strategy">{t('strategy')}</option>
+                    <option value="complete">{t('complete')}</option>
                   </select>
                 </div>
                 <div>
                   <label htmlFor="client-message" className="block text-sm font-medium text-[#0A0A12] mb-2">
-                    Message
+                    {t('message')}
                   </label>
                   <textarea
                     id="client-message"
                     name="client-message"
                     rows={4}
                     className="w-full rounded-lg border-2 border-[#0A0A12]/20 bg-white px-4 py-3 text-[#0A0A12] focus:border-[#25E5C5] focus:ring-2 focus:ring-[#25E5C5]/20 transition-colors"
-                    placeholder="Tell us about your project..."
+                    placeholder={t('tellUs')}
                   ></textarea>
                 </div>
                 <button
                   type="submit"
                   className="w-full rounded-lg bg-[#FFD642] px-6 py-4 text-base font-semibold text-[#0A0A12] shadow-sm transition-all hover:bg-[#FFD642]/90 hover:shadow-lg hover:scale-105"
                 >
-                  Request Quote
+                  {t('submit')}
                 </button>
               </form>
             </div>
@@ -171,3 +180,4 @@ export default function ClientPage() {
     </div>
   );
 }
+
