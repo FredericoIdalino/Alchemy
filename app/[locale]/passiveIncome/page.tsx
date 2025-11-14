@@ -60,7 +60,7 @@ export default function PassiveIncomePage() {
             {/* Button */}
             <div className="flex items-center justify-center pt-8">
               <a
-                href="https://tally.so/r/7RlGR6"
+                href="https://tally.so/r/aQNVQW"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center rounded-xl bg-gradient-to-r from-[#FFD642] to-[#25E5C5] px-12 py-6 text-xl font-semibold text-[#0A0A12] shadow-2xl transition-all hover:shadow-[0_0_30px_rgba(255,214,66,0.5)] hover:scale-110"
